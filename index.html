@@ -1,0 +1,193 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vineeth Bapatla | Developer & Designer</title>  <!-- Google Font -->  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">  <!-- Tailwind CDN -->  <script src="https://cdn.tailwindcss.com"></script></head>
+    <body class="bg-black text-white">
+        
+        <style>
+    body { font-family: 'Inter', sans-serif; }
+
+    /* Glass effect */
+    .glass {
+      -webkit-backdrop-filter: blur(12px);
+      backdrop-filter: blur(12px);
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+    }
+
+    /* Smooth scroll */
+    html { scroll-behavior: smooth; }
+
+    /* Gradient background animation */
+    .bg-animate {
+      background: linear-gradient(-45deg, #000, #111, #1a1a1a, #000);
+      background-size: 400% 400%;
+      animation: gradient 10s ease infinite;
+    }
+
+    @keyframes gradient {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    /* Fade animation */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(40px);
+      transition: all 0.8s ease;
+    }
+
+    .fade-in.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Cursor */
+    .cursor {
+      width: 20px;
+      height: 20px;
+      border: 1px solid white;
+      border-radius: 50%;
+      position: fixed;
+      pointer-events: none;
+      transform: translate(-50%, -50%);
+      transition: transform 0.1s ease;
+      z-index: 9999;
+    }
+  </style>
+        
+        
+        
+        <!-- Custom Cursor --><div class="cursor" id="cursor"></div><!-- Navbar --><header class="fixed w-full top-0 z-50 glass">
+  <nav class="max-w-6xl mx-auto flex justify-between items-center p-4">
+    <h1 class="font-bold text-lg">Vineeth</h1>
+    <div class="space-x-6 hidden md:block">
+      <a href="#about" title="About">About</a>
+      <a href="#projects" title="Projects">Projects</a>
+      <a href="#contact" title="Contact">Contact</a>
+    </div>
+  </nav>
+</header><!-- Hero Section --><section class="h-screen flex flex-col justify-center items-center text-center bg-animate">
+  <h1 class="text-4xl md:text-6xl font-bold mb-4">Vineeth Bapatla</h1>
+  <p class="text-gray-400 mb-6">Developer & Designer crafting premium digital experiences</p>
+  <div class="space-x-4">
+    <a href="#projects" class="px-6 py-3 bg-white text-black rounded-full">View Work</a>
+    <a href="#contact" class="px-6 py-3 border border-white rounded-full">Contact</a>
+  </div>
+</section><!-- About --><section id="about" class="py-20 max-w-6xl mx-auto px-6 fade-in">
+  <h2 class="text-3xl font-bold mb-6">About Me</h2>
+  <p class="text-gray-400 mb-6">I build modern apps, clean UI websites, and creative digital products with a focus on performance and aesthetics.</p>  <div class="grid md:grid-cols-3 gap-6">
+    <div class="glass p-6 rounded-xl">UI/UX Design</div>
+    <div class="glass p-6 rounded-xl">Frontend Dev</div>
+    <div class="glass p-6 rounded-xl">App Development</div>
+  </div>
+</section><!-- Projects --><section id="projects" class="py-20 px-6 max-w-6xl mx-auto fade-in">
+  <h2 class="text-3xl font-bold mb-10">Projects</h2>  <div class="grid md:grid-cols-2 gap-8">
+    <div class="group relative overflow-hidden rounded-xl">
+        <a href="https://donecart.vercel.app"  title="View Project 1">
+      <img src="https://picsum.photos/600/400" class="w-full h-full object-cover group-hover:scale-110 transition duration-500" alt="Project 1">
+      <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 flex items-center justify-center transition">
+       
+        <p>Project 1</p>
+         
+      </div></a>
+      
+    </div><div class="group relative overflow-hidden rounded-xl">
+        <a href="http://github.com"  title="View Project 2">
+  <img src="https://picsum.photos/601/400" class="w-full h-full object-cover group-hover:scale-110 transition duration-500" alt="Project 2">
+  <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 flex items-center justify-center transition">
+   
+    <p>Project 2</p>
+  </div>
+   </a>
+</div>
+
+  </div>
+</section><!-- Timeline --><section class="py-20 px-6 max-w-4xl mx-auto fade-in">
+  <h2 class="text-3xl font-bold mb-10">Experience</h2>
+  <div class="border-l border-gray-700 pl-6 space-y-6">
+    <div>
+      <h3 class="font-semibold">2025 - Present</h3>
+      <p class="text-gray-400">Building apps & websites</p>
+    </div>
+    <div>
+      <h3 class="font-semibold">2024</h3>
+      <p class="text-gray-400">Started UI/UX journey</p>
+    </div>
+  </div>
+</section><!-- Services --><section class="py-20 px-6 max-w-6xl mx-auto fade-in">
+  <h2 class="text-3xl font-bold mb-10">Services</h2>
+  <div class="grid md:grid-cols-3 gap-6">
+    <div class="glass p-6 rounded-xl">App Development</div>
+    <div class="glass p-6 rounded-xl">Web Design</div>
+    <div class="glass p-6 rounded-xl">UI/UX</div>
+  </div>
+</section><!-- Contact --><section id="contact" class="py-20 px-6 max-w-4xl mx-auto fade-in">
+  <h2 class="text-3xl font-bold mb-6">Contact</h2>
+
+  <form id="contact-form" class="space-y-4">
+  <input type="text" name="name" placeholder="Name" required class="w-full p-3 bg-black border border-gray-700 rounded">
+  
+  <input type="email" name="email" placeholder="Email" required class="w-full p-3 bg-black border border-gray-700 rounded">
+  
+  
+  <textarea name="message" placeholder="Message" required class="w-full p-3 bg-black border border-gray-700 rounded"></textarea>
+  
+  <button type="submit" class="px-6 py-3 bg-white text-black rounded-full">
+    Send
+  </button>
+</form>
+</section><!-- Footer --><footer class="text-center py-6 text-gray-500">
+  © 2026 Vineeth Bapatla
+</footer><script>
+  // Scroll animation
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('show');
+      }
+    });
+  });
+
+  document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+  // Custom cursor
+  const cursor = document.getElementById('cursor');
+  document.addEventListener('mousemove', e => {
+    cursor.style.left = e.clientX + 'px';
+    cursor.style.top = e.clientY + 'px';
+  });
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+<script>
+  (function(){
+    emailjs.init("s7CrmxZCjOEe4U5Kf"); 
+  
+  
+  
+  const form = document.getElementById('contact-form');
+
+form.addEventListener('submit', function(e) {
+  e.preventDefault();
+
+  emailjs.sendForm(
+    'service_9rkv59h',  
+    'template_jlomkc6',  
+    this
+  )
+  .then(() => {
+    alert('Message sent successfully!');
+    form.reset();
+  }, (error) => {
+    alert('Failed to send message. Try again.');
+    console.log(error);
+  });
+})
+  })();
+</script>
+</body>
+</html>      
